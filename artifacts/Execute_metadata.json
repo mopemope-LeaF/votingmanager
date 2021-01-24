@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_voteId",
+						"type": "uint256"
+					}
+				],
+				"name": "execute",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "voteId",
+						"type": "uint256"
+					}
+				],
+				"name": "ExecuteEvent",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/execute.sol": "Execute"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/execute.sol": {
+			"keccak256": "0xc608ca3347c5b29161ed2236ef38efb848804822647b0be5fd176d5f00d73384",
+			"urls": [
+				"bzzr://c7191adf8f238bd92737c81c08f32a9b62bcc7ea8ec6c8c99c017139c623f78a"
+			]
+		}
+	},
+	"version": 1
+}

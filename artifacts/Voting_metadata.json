@@ -1,0 +1,225 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_supportRequiredPct",
+						"type": "uint64"
+					},
+					{
+						"name": "_voteTime",
+						"type": "uint64"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_executableContract",
+						"type": "address"
+					}
+				],
+				"name": "newVote",
+				"outputs": [
+					{
+						"name": "voteId",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "voteTime",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_voteId",
+						"type": "uint256"
+					},
+					{
+						"name": "_supports",
+						"type": "bool"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "votesLength",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_voteId",
+						"type": "uint256"
+					}
+				],
+				"name": "executeVote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "supportRequiredPct",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "PCT_BASE",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "voteId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"name": "creator",
+						"type": "address"
+					}
+				],
+				"name": "StartVote",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "voteId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"name": "voter",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "supports",
+						"type": "bool"
+					}
+				],
+				"name": "CastVote",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "voteId",
+						"type": "uint256"
+					}
+				],
+				"name": "ExecuteVote",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/voting.sol": "Voting"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/math/SafeMath.sol": {
+			"keccak256": "0xafbd313c71f3846557b0521e5207a654f044d7a27d2c7281c303e8f977fe4741",
+			"urls": [
+				"bzzr://05e8c3a7e32bb0dc929d02369d1618824c247fd015922fe9a5c539d081364286"
+			]
+		},
+		"localhost/math/SafeMath64.sol": {
+			"keccak256": "0x89aaf4af23e9621ecb44d7e81f51df8cd1026631024170fcac9fd230e6d529b3",
+			"urls": [
+				"bzzr://3950af4bf26f51edb74a11109ee2769ce71292ce39867dbde66fd0aea29c0eb9"
+			]
+		},
+		"localhost/voting.sol": {
+			"keccak256": "0x8bf588949a2cd84063ae3eb614ee08a1e99d0179212789b748e00458e8a6a7f6",
+			"urls": [
+				"bzzr://c85576a8089f7cf7860937ab96460e8dfb67c546dae2a63955f1cabae85f36de"
+			]
+		}
+	},
+	"version": 1
+}
